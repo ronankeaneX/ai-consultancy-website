@@ -36,7 +36,7 @@ export default function ProcessOverview() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             How We Work
           </h2>
-          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
+          <p className="text-xl text-text-secondary mx-auto" style={{ maxWidth: '42rem', width: '100%' }}>
             A transparent, collaborative process designed around your business needs
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function ProcessOverview() {
           <h3 className="text-2xl font-bold text-primary mb-3">
             Ready to get started?
           </h3>
-          <p className="text-text-secondary mb-6 max-w-2xl mx-auto">
+          <p className="text-text-secondary mb-6 mx-auto" style={{ maxWidth: '42rem', width: '100%' }}>
             Every project is different, but our process stays the same: transparent,
             collaborative, and focused on results.
           </p>

@@ -22,19 +22,22 @@ const differentiators = [
 
 export default function Differentiator() {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary via-primary to-accent/20 text-white">
-      <Container>
+    <section className="py-20 bg-background relative overflow-hidden">
+      {/* Strategic use of dark navy as accent background - subtle */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
+      
+      <Container className="relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
               Why We're Different
             </h2>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl text-text-secondary mb-8 leading-relaxed">
               In a world full of generic AI solutions, we focus on what actually matters:
               combining human expertise with AI tools to solve real business problems.
             </p>
-            <p className="text-lg text-gray-400 leading-relaxed">
+            <p className="text-lg text-text-secondary leading-relaxed">
               We're not here to replace your team—we're here to supercharge them with
               AI capabilities that make sense for your business.
             </p>
@@ -45,15 +48,15 @@ export default function Differentiator() {
             {differentiators.map((item, index) => (
               <div
                 key={index}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-all hover:border-accent"
+                className="bg-surface border-2 border-border rounded-lg p-6 hover:border-primary hover:shadow-lg transition-all"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-accent to-tertiary rounded-full flex items-center justify-center text-white font-bold">
                     {index + 1}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">{item.label}</h3>
-                    <p className="text-gray-300">{item.description}</p>
+                    <h3 className="text-xl font-bold mb-2 text-primary">{item.label}</h3>
+                    <p className="text-text-secondary">{item.description}</p>
                   </div>
                 </div>
               </div>

@@ -28,19 +28,17 @@ export default function ProblemStatement() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Most AI Tools Promise the World
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-text-secondary mx-auto" style={{ maxWidth: '48rem', width: '100%' }}>
             We deliver solutions that actually work for your business
           </p>
         </div>
 
-        {/* Asymmetrical 3-column layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* 3-column layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {problems.map((problem, index) => (
             <FadeInWhenVisible key={index} delay={index * 0.2}>
               <div
-                className={`bg-surface p-8 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg ${
-                  index === 1 ? 'md:translate-y-8' : ''
-                }`}
+                className="bg-surface p-8 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg"
               >
                 <div className="text-5xl mb-4">{problem.icon}</div>
                 <h3 className="text-2xl font-bold text-primary mb-3">

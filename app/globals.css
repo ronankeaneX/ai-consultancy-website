@@ -57,8 +57,26 @@
     font-family: var(--font-sans);
   }
 
+  /* Prevent aggressive word breaking */
+  p, div, span, h1, h2, h3, h4, h5, h6 {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    white-space: normal;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
+  }
+
+  h1 {
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    word-wrap: normal;
+    overflow-wrap: normal;
   }
 }
 

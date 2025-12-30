@@ -58,7 +58,7 @@ export default function CaseStudies() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Real Results from Real Businesses
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-text-secondary mx-auto" style={{ maxWidth: '48rem', width: '100%' }}>
             See how we've helped companies like yours leverage AI to solve actual business problems
           </p>
         </div>
@@ -67,9 +67,8 @@ export default function CaseStudies() {
           {caseStudies.map((study, index) => (
             <Card
               key={index}
-              className={`${
-                index % 2 === 0 ? 'lg:mr-12' : 'lg:ml-12'
-              } hover:shadow-2xl transition-shadow duration-300`}
+              className="hover:shadow-2xl transition-shadow duration-300"
+              style={{ width: '100%', maxWidth: '100%' }}
             >
               <div className="grid lg:grid-cols-2 gap-8">
                 {/* Left: Problem & Solution */}

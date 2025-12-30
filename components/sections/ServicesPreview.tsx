@@ -32,24 +32,15 @@ export default function ServicesPreview() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             How We Help Your Business
           </h2>
-          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
+          <p className="text-xl text-text-secondary mx-auto" style={{ maxWidth: '42rem', width: '100%' }}>
             Three core services designed to integrate AI into your operations
           </p>
         </div>
 
-        {/* Offset grid layout - dynamic, not centered */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* 3-column grid layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className={`${
-                index === 0 ? 'lg:col-start-1' : ''
-              } ${
-                index === 1 ? 'md:col-start-2 lg:col-start-2 lg:translate-y-8' : ''
-              } ${
-                index === 2 ? 'md:col-start-1 lg:col-start-3' : ''
-              }`}
-            >
+            <div key={index}>
               <Link href={service.link}>
                 <Card className="h-full cursor-pointer group hover:border-accent hover:shadow-xl transition-all duration-300">
                   <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">

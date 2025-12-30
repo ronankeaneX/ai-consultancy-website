@@ -32,7 +32,7 @@ export default function BusinessAuditForm() {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Get Your Free AI Business Audit
           </h2>
-          <p className="text-xl text-text-secondary max-w-2xl mx-auto">
+          <p className="text-xl text-text-secondary mx-auto" style={{ maxWidth: '42rem', width: '100%' }}>
             Discover how AI can transform your business operations. We'll analyze your needs
             and provide actionable recommendations—no sales pitch, just value.
           </p>

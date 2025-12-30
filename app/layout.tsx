@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   title: "AI Consultancy - Transform Your Business with AI",
   description: "We help small-to-medium businesses integrate AI through expert prompt engineering, custom software development, and strategic AI consulting.",
   keywords: ["AI consulting", "AI integration", "prompt engineering", "custom software development"],
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 
 export default function RootLayout({

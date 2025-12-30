@@ -18,7 +18,8 @@ const Container = React.forwardRef<HTMLDivElement, ContainerProps>(
     return (
       <div
         ref={ref}
-        className={cn('mx-auto px-4 sm:px-6 lg:px-8', sizeClasses[size], className)}
+        className={cn('mx-auto px-4 sm:px-6 lg:px-8 w-full', sizeClasses[size], className)}
+        style={{ width: '100%', maxWidth: size === 'sm' ? '48rem' : size === 'md' ? '64rem' : size === 'lg' ? '80rem' : '100%' }}
         {...props}
       >
         {children}

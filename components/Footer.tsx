@@ -4,7 +4,7 @@ import Container from './Container';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white py-12 border-t border-accent/20">
+    <footer className="bg-surface border-t border-border py-12">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
@@ -12,15 +12,15 @@ export default function Footer() {
             <h3 className="text-2xl font-bold bg-gradient-to-r from-accent via-accent-secondary to-tertiary bg-clip-text text-transparent mb-4">
               AI Consultancy
             </h3>
-            <p className="text-gray-400 text-sm">
+            <p className="text-text-secondary text-sm">
               Helping businesses integrate AI through expert prompt engineering, custom development, and strategic consulting.
             </p>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <h4 className="font-semibold mb-4 text-primary">Services</h4>
+            <ul className="space-y-2 text-sm text-text-secondary">
               <li><Link href="/services#prompt-engineering" className="hover:text-accent transition-colors">Prompt Engineering</Link></li>
               <li><Link href="/services#software-development" className="hover:text-accent transition-colors">Custom Development</Link></li>
               <li><Link href="/services#consulting" className="hover:text-accent transition-colors">AI Consulting</Link></li>
@@ -29,8 +29,8 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <h4 className="font-semibold mb-4 text-primary">Company</h4>
+            <ul className="space-y-2 text-sm text-text-secondary">
               <li><Link href="/about" className="hover:text-accent transition-colors">About Us</Link></li>
               <li><Link href="/portfolio" className="hover:text-accent transition-colors">Portfolio</Link></li>
               <li><Link href="/blog" className="hover:text-accent transition-colors">Blog</Link></li>
@@ -40,8 +40,8 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4">Get in Touch</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <h4 className="font-semibold mb-4 text-primary">Get in Touch</h4>
+            <ul className="space-y-2 text-sm text-text-secondary">
               <li><a href="mailto:hello@ai-consultancy.com" className="hover:text-accent transition-colors">hello@ai-consultancy.com</a></li>
               <li className="pt-4">
                 <Link href="#audit-form" className="text-success font-semibold hover:text-success-dark transition-colors">
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center text-sm text-text-secondary">
           <p>&copy; {new Date().getFullYear()} AI Consultancy. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
