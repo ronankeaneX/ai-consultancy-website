@@ -9,7 +9,7 @@ import FinalCTA from '@/components/sections/FinalCTA';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <>
       <HeroSection />
       <ProblemStatement />
       <ServicesPreview />
@@ -20,6 +20,6 @@ export default function Home() {
         <BusinessAuditForm />
       </div>
       <FinalCTA />
-    </main>
+    </>
   );
 }

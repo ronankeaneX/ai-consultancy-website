@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from '@/components/Container';
+import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible';
 
 const problems = [
   {
@@ -35,20 +36,21 @@ export default function ProblemStatement() {
         {/* Asymmetrical 3-column layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {problems.map((problem, index) => (
-            <div
-              key={index}
-              className={`bg-surface p-8 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg ${
-                index === 1 ? 'md:translate-y-8' : ''
-              }`}
-            >
-              <div className="text-5xl mb-4">{problem.icon}</div>
-              <h3 className="text-2xl font-bold text-primary mb-3">
-                {problem.title}
-              </h3>
-              <p className="text-text-secondary leading-relaxed">
-                {problem.description}
-              </p>
-            </div>
+            <FadeInWhenVisible key={index} delay={index * 0.2}>
+              <div
+                className={`bg-surface p-8 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg ${
+                  index === 1 ? 'md:translate-y-8' : ''
+                }`}
+              >
+                <div className="text-5xl mb-4">{problem.icon}</div>
+                <h3 className="text-2xl font-bold text-primary mb-3">
+                  {problem.title}
+                </h3>
+                <p className="text-text-secondary leading-relaxed">
+                  {problem.description}
+                </p>
+              </div>
+            </FadeInWhenVisible>
           ))}
         </div>
       </Container>

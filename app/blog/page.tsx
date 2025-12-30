@@ -1,5 +1,12 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Container from '@/components/Container';
+
+export const metadata: Metadata = {
+  title: 'Blog - AI Consultancy',
+  description: 'Read our insights, tutorials, and case studies about AI integration for businesses. Learn how to leverage AI effectively.',
+  keywords: ['AI blog', 'AI tutorials', 'AI insights', 'business AI'],
+};
 import Button from '@/components/Button';
 import Link from 'next/link';
 

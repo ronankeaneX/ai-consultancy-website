@@ -1,5 +1,12 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Container from '@/components/Container';
+
+export const metadata: Metadata = {
+  title: 'Portfolio - AI Consultancy',
+  description: 'View our portfolio of successful AI integration projects and case studies. See real results from real businesses.',
+  keywords: ['AI portfolio', 'case studies', 'AI projects', 'success stories'],
+};
 import Button from '@/components/Button';
 import Link from 'next/link';
 
